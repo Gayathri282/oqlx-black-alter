@@ -2138,10 +2138,10 @@ svg.slider-shape{
     }
   }
 
-  #jellyText {
-    animation: jellyAnimation 1.5s infinite;
+  #jellyText:hover {
+    animation: jellyAnimation 2s infinite;
+    cursor: pointer;
   }
 
-  #jellyText:hover {
-    animation: none;
-  }
+ 
+  
