@@ -1156,10 +1156,12 @@ svg.slider-shape{
 .single-work {
     position: relative;
     overflow: hidden;
-    max-width: 700px;
-    margin-left: 404px;
+    max-width: 500px;
+    max-height: 500px;
+   
+    /* margin-left: 404px;
     padding: -81px;
-    margin-top: -8rem;
+    margin-top: -8rem; */
 }
 
 .single-work img {
@@ -1429,7 +1431,7 @@ svg.slider-shape{
 ====================================== */
 
 .contact-sec{
-/*     background-image: url("../images/pexels-oleksandr-p-12960383.jpg"); */
+    background-image: url("../images/pexels-oleksandr-p-12960383.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2144,6 +2146,18 @@ svg.slider-shape{
     animation: jellyAnimation 2s infinite;
     cursor: pointer;
   }
+  body {
+    margin: 0;
+    padding: 0;
+}
 
+.slider-area {
+    overflow: hidden; /* Add this to hide any overflowing content */
+}
+
+/* If there's still a gray background, you can set the background color of the body or HTML element */
+body, html {
+    background-color: #000000; /* Change to the desired background color */
+}
  
  
