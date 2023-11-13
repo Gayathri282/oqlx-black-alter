@@ -1100,15 +1100,16 @@ svg.slider-shape{
 /* ===================================
    Portfolio
 ====================================== */
+/* Common styles for both large and small screens */
 
-.portfolio-bg{
-    /* background-image: url("../images/pexels-cottonbro-studio-3945670.jpg"); */
+.portfolio-bg {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     width: 95%;
     margin-left: 5%;
 }
+
 .section4left .main-font {
     margin-bottom: -70px;
 }
@@ -1152,16 +1153,14 @@ svg.slider-shape{
     margin-bottom: 20px;
 }
 
-
 .single-work {
     position: relative;
     overflow: hidden;
     max-width: 500px;
     max-height: 500px;
-   
-    /* margin-left: 404px;
+    margin-left: 404px;
     padding: -81px;
-    margin-top: -8rem; */
+    margin-top: -8rem;
 }
 
 .single-work img {
@@ -1177,7 +1176,7 @@ svg.slider-shape{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -1206,22 +1205,26 @@ svg.slider-shape{
     justify-content: center;
     z-index: 1111;
 }
+
 .cases-line {
     position: absolute;
     background: #ffffff;
 }
+
 .top {
     top: 15px;
     right: 15px;
     width: 100px;
     height: 2px;
 }
+
 .top-right {
     top: 15px;
     right: 15px;
     height: 100px;
     width: 2px;
 }
+
 .bottom {
     top: unset;
     bottom: 15px;
@@ -1229,6 +1232,7 @@ svg.slider-shape{
     width: 100px;
     height: 2px;
 }
+
 .bottom-left {
     top: unset;
     bottom: 15px;
@@ -1237,7 +1241,8 @@ svg.slider-shape{
     width: 2px;
 }
 
-.single-work .overlay-text:before, .single-work .overlay-text:after {
+.single-work .overlay-text:before,
+.single-work .overlay-text:after {
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -1285,7 +1290,7 @@ svg.slider-shape{
     transition: all .5s ease 0.2s;
 }
 
-.circle{
+.circle {
     position: relative;
     z-index: 1111;
     height: 42px;
@@ -1307,7 +1312,7 @@ svg.slider-shape{
     position: absolute;
 }
 
-#team-circle-left{
+#team-circle-left {
     top: 40%;
     left: -8%;
     transition: .5s ease;
@@ -1318,6 +1323,17 @@ svg.slider-shape{
     font-size: 42px;
     color: #706f6f;
 }
+
+/* Media query for smaller screens */
+
+@media screen and (max-width: 768px) {
+    .single-work {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 2rem; /* Adjust as needed */
+    }
+}
+
 
 /* ===================================
    Blog
@@ -2146,6 +2162,8 @@ svg.slider-shape{
     animation: jellyAnimation 2s infinite;
     cursor: pointer;
   }
+  /* Common styles for both large and small screens */
+
   body {
     margin: 0;
     padding: 0;
