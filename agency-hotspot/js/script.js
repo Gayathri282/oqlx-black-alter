@@ -13,7 +13,7 @@ $(window).on("load", function () {
     /* ===================================
         Page Piling
     ====================================== */
-    if($(window).width() < 1280) {
+    if(1281 < 1280) {
         $('.pagedata').removeAttr('id');
         $('html, body').css('overflow-y', 'scroll');
         //Team Counter
